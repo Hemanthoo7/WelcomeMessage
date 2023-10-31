@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <container name="custom.block.subname" htmlTag="div" htmlClass="products-welcome-message" before="-">
+                <block class="Dcw\WelcomeMessage\Block\ProductsWelcomeMessage" name="products.welcome.message" template="Dcw_WelcomeMessage::welcome_message.phtml" />
+            </container>
+        </referenceContainer>
+        <move element="custom.block.subname" destination="page.main.title" after="-"/>
+    </body>
+</page>
